@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 'use strict';
 
-var dynamoDbExport = require('../lib/DynamoDbExportCsv.js');
-var commander = require('commander');
+const dynamoDbExport = require('../lib/DynamoDbExportCsv.js');
+const commander = require('commander');
 
 commander
 	.version('0.0.1')
@@ -50,12 +50,12 @@ if (!commander.columns) {
 	process.exit(1);
 }
 
-var parallelScans = 1;
+let parallelScans = 1;
 if (commander.scans) {
 	parallelScans = commander.scans;
 }
 
-var columns = commander.columns.split(',');
+const columns = commander.columns.split(',');
 
 if (commander.worker !== undefined) {
 	console.info(
@@ -73,7 +73,7 @@ if (commander.worker !== undefined) {
 	);
 }
 
-var exporter = new dynamoDbExport(
+const exporter = new dynamoDbExport(
 	commander.awsid,
 	commander.awssecret,
 	commander.awsregion
@@ -93,8 +93,8 @@ if (!commander.quiet) {
 	});
 }
 
-var finished = function(err) {
-	var workerPrefix = '';
+const finished = function(err) {
+	let workerPrefix = '';
 	if (commander.worker !== undefined) {
 		workerPrefix = 'Worker [' + commander.worker + ']: ';
 	}
