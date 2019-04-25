@@ -121,17 +121,18 @@ The table contained 187,363,510 rows and was 98GB in size.  All tests wrote the 
 | c4.8xlarge | 30 | 36 m | 67% | 5500 |
 
 ## Release Notes
-* 0.2.4 - Added support for boolean column types
+* 0.0.1 - Initial files: support for JSON data, and split columns if is necessary
 
 ## People
 
-The author is [Chris Kinsman](https://github.com/chriskinsman) from [PushSpring](http://www.pushspring.com)
+- [Chris Kinsman](https://github.com/chriskinsman)
+- [Fernando Palacios](https://github.com/fernandops26)
 
 ## License
 
   [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/dynamodbexportcsv.svg?style=flat
-[npm-url]: https://npmjs.org/package/dynamodbexportcsv
-[downloads-image]: https://img.shields.io/npm/dm/dynamodbexportcsv.svg?style=flat
-[downloads-url]: https://npmjs.org/package/dynamodbexportcsv
+[npm-image]: https://img.shields.io/npm/v/dynacsv.svg?style=flat
+[npm-url]: https://npmjs.org/package/dynacsv
+[downloads-image]: https://img.shields.io/npm/dm/dynacsv.svg?style=flat
+[downloads-url]: https://npmjs.org/package/dynacsv

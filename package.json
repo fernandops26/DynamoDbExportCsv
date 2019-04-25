@@ -1,23 +1,23 @@
 {
-  "name": "dynamodbexportcsv",
-  "version": "0.2.4",
-  "description": "Export DynamoDb tables to CSV",
+  "name": "dynacsv",
+  "version": "0.0.1",
+  "description": "Export DynamoDB tables to CSV Files",
   "repository": {
     "type": "git",
-    "url": "git@github.com:chriskinsman/DynamoDbExportCsv.git"
+    "url": "git@github.com:fernandops26/dynacsv.git"
   },
   "bin": {
     "DynamoDbExportCsv": "./bin/DynamoDbExportCsv"
   },
   "main": "./lib/DynamoDbExportCsv.js",
-  "author": "Chris Kinsman - PushSpring",
+  "author": "Fernando Palacios",
   "license": "MIT",
   "dependencies": {
-    "fast-csv": "2.3.0",
-    "commander": "~2.9.0",
-    "async": "~2.1.4",
-    "aws-sdk": "~2.7.20",
-    "underscore": "~1.8.3",
-    "s3-stream-upload": "~2.0.0"
+    "fast-csv": "2.5.0",
+    "commander": "~2.20.0",
+    "async": "~2.6.2",
+    "aws-sdk": "~2.442.0",
+    "underscore": "~1.9.1",
+    "s3-stream-upload": "~2.0.2"
   }
 }
