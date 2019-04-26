@@ -1,6 +1,6 @@
 {
   "name": "dynacsv",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Export DynamoDB tables to CSV Files",
   "repository": {
     "type": "git",
