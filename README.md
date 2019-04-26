@@ -16,12 +16,12 @@ or streamed to S3.
 
 ### CLI tool
 ``` bash
-  $ [sudo] npm install dynamodbexportcsv -g
+  $ [sudo] npm install dynacsv -g
 ```
 
 ### Library
 ``` bash
-  $ npm install dynamodbexportcsv --save
+  $ npm install dynacsv --save
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ or streamed to S3.
 
 ### Library
 ```js
-var csvExport = require('DynamoDbExportCsv');
+var csvExport = require('dynacsv');
 var exporter = new csvExport('<accessKey>', '<secretKey>', '<awsRegion>');
 
 exporter.exportTable('<tableName>', ['columna','columnb'], 4, true, 250, null, null, function(err) {
@@ -49,7 +49,7 @@ Parallel Scans are useful to maximize usage of throughput provisioned on the Dyn
 
 ## Documentation
 
-### new DynamoDbExportToCSV(awsAccessKeyId, awsSecretAccessKey, awsRegion)
+### new Dynacsv(awsAccessKeyId, awsSecretAccessKey, awsRegion)
 
 Sets up the AWS credentials to use
 
