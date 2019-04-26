@@ -123,6 +123,7 @@ The table contained 187,363,510 rows and was 98GB in size.  All tests wrote the 
 ## Release Notes
 * 0.0.1 - Initial files: support for JSON data, and split columns if is necessary
 * 0.0.2 - Fix: resolve nested JSON paths.
+* 0.0.3 - Fix: Resolve broken run process on windows
 
 ## People
 
